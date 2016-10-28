@@ -11,6 +11,7 @@ ENV ANDROID_BUILD_TOOLS_VERSION 25.0.0
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK_HOME ${ANDROID_HOME}
 ENV PATH ${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}
+ENV SHELL /bin/bash
 
 RUN cd /opt && \
   wget -q ${ANDROID_SDK_URL} && \
