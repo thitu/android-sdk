@@ -6,8 +6,8 @@ ENV ANDROID_SDK_FILENAME android-sdk_r24.4.1-linux.tgz
 ENV ANDROID_SDK_URL http://dl.google.com/android/${ANDROID_SDK_FILENAME}
 ENV ANDROID_API_LEVELS android-18,android-19,android-20,android-21,android-22,android-23,android-24,android-25
 ENV ANDROID_COMPONENTS extra-android-support,extra-google-google_play_services,extra-google-m2repository,extra-android-m2repository,addon-google_apis-google-24,extra
-ENV ANDROID_IMAGES sys-img-armeabi-v7a-android-24
-ENV ANDROID_BUILD_TOOLS_VERSION 25.0.0
+ENV ANDROID_IMAGES sys-img-arm64-v8a-android-24
+ENV ANDROID_BUILD_TOOLS_VERSION 25.0.1
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK_HOME ${ANDROID_HOME}
 ENV PATH ${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}
