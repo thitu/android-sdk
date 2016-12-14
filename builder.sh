@@ -3,7 +3,7 @@
 tag=$1
 
 if [ "$tag" = "" ]; then
-  tag="latest"
+  tag="mini"
 fi
 
 docker -t thitu/android-sdk:$tag -f Dockerfile .
