@@ -12,8 +12,9 @@ ENV ANDROID_IMAGES sys-img-arm64-v8a-android-24
 
 ENV ANDROID_BUILD_TOOLS_VERSION 25.0.2
 ENV ANDROID_HOME /opt/android-sdk-linux
+ENV GRADLE_HOME /usr/local/gradle
 ENV ANDROID_SDK_HOME ${ANDROID_HOME}
-ENV PATH ${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/${ANDROID_BUILD_TOOLS_VERSION}:${PATH}
+ENV PATH ${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/${ANDROID_BUILD_TOOLS_VERSION}:${PATH}
 ENV SHELL /bin/bash
 
 RUN cd /opt && \
